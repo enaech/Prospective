@@ -34,7 +34,7 @@ Pathology
 The **Pathology** folder contains co-registered pathological slides for each patient, stored in Nifti.gunzip format. These slides include a pathologically segmented tumor mask. 
 When overlaid onto anatomical image files (loaded as segmentation), the co-registered results will be displayed.
 
-MRI Habitat & Clustering
+MRI Habitat & Clustering  
 This category includes the `ADC`, `CBV`, `3clstr`, and `PNG` subfolders. Specifically, the MRI habitat data provides results of tumor habitat analysis for each patient, stored in Nifti.gunzip format.    
 The dataset contains ADC and CBV maps, along with voxel-level clustering results derived from these maps.   
 The 3clstr folder includes the final voxel classifications based on normalized CBV (nCBV) and ADC values, obtained using a k-means clustering method.   
