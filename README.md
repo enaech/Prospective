@@ -12,6 +12,15 @@ An increase in hypovascular cellular habitat predicted tumor progression sites.
 
 ## MRI aqcusition  
 
+## MRI Habitat  
+The final voxel classifications based on nCBV and ADC values were implemented using a k-means clustering module in the scikit-learn python package.
+By utilizing these two distinct feature maps, three clusters were established: 
+- `cluster 1` represented **“hypervascular cellular tumor”** with high CBV values and low ADC values  
+- `cluster 2` represented **“hypovascular cellular tumor”** with low CBV values and low ADC values
+- `cluster 3` represented **“nonviable tissue”** with low CBV values and high ADC values.  
+The ranges for the boundaries of the pre-trained and retrospectively validated spatial physiologic habitats were previously reported as 4.37–4.44 for nCBV and 150–187 (×10-6 mm2/s) for ADC in a study on 97 patients 19.
+
+
 ## Dataset
 This folder contains co-registered MRI and pathological slide data, organized into seven sub-folders, which fall into three main categories: MRI, Pathology, and MRI Habitat & Clustering. 
 The sub-folder names are as follows: T1ce, FLAIR, ADC, CBV, Pathology, 3clstr, and PNG.
