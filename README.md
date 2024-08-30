@@ -18,8 +18,8 @@ By utilizing these two distinct feature maps, three clusters were established:
 - `cluster 2` represented **“hypovascular cellular tumor”** with low CBV values and low ADC values
 - `cluster 3` represented **“nonviable tissue”** with low CBV values and high ADC values.  
 
-The ranges for the boundaries of the pre-trained and retrospectively validated spatial physiologic habitats were previously reported as 4.37–4.44 for nCBV and 150–187 (×10-6 mm2/s) for ADC in a study on 97 patients [(park et al.,2021)](10.1158/1078-0432.CCR-20-2156).   
-  >>  *Park JE, Kim HS, Kim N, Park SY, Kim YH, Kim JH. Spatiotemporal Heterogeneity in Multiparametric Physiologic MRI Is Associated with Patient Outcomes in IDH-Wildtype Glioblastoma. Clin Cancer Res. 2021 Jan 1;27(1):237-245. doi: 10.1158/1078-0432.CCR-20-2156. Epub 2020 Oct 7. PMID: 33028594.*
+The ranges for the boundaries of the pre-trained and retrospectively validated spatial physiologic habitats were previously reported as 4.37–4.44 for nCBV and 150–187 (×10-6 mm2/s) for ADC in a study on 97 patients<sup>[1](https://10.1158/1078-0432.CCR-20-2156)</sup>.   
+
 
 ## Dataset
 This folder contains co-registered MRI and pathological slide data, organized into six sub-folders, which fall into two main categories: MRI and MRI_Habitat
@@ -27,11 +27,15 @@ The sub-folder names are as follows: T1ce, FLAIR, ADC, CBV, Tumor_mask, and Habi
 
 ### MRI  
 The **MRI** category includes the `T1ce`, `FLAIR`, `ADC`, and `CBV` subfolders. MRI data is provided in Nifti.gunzip format. {PID}_{timepoint}_sequence_nii.gz  
-For instance, the files for a patient with ID 1083, who underwent MRI on October 24, 2018, are named `1083_20181024_t1ce_coreg.nii.gz` and `1083_20181024_flair_coreg.nii.gz`.  
+For instance, the files for a patient with ID 1083, who underwent MRI on October 24, 2018, are named `H001_20181024_t1ce_coreg.nii.gz` and `H001_20181024_flair_coreg.nii.gz`.  
 This naming convention is consistent across the entire dataset.  
 
 ### MRI_Habitat
 The MRI habitat data provides results of tumor habitat analysis for each patient, stored in Nifti.gunzip format.   
-The `Tumor_mask` folder contains segmented tumor mask, based on the T1ce and Flair images. 
+The `Tumor_mask` folder contains segmented tumor mask, based on the T1ce and Flair images.  
 The `Habitat` folder includes the final voxel classifications based on normalized CBV (nCBV) and ADC values, obtained using a k-means clustering method.   
 When these files are overlaid onto anatomical image files (loaded as segmentation), the tumor habitats will be visualized.  
+
+---  
+<sup>[1]</sup>  Park JE, Kim HS, Kim N, Park SY, Kim YH, Kim JH. Spatiotemporal Heterogeneity in Multiparametric Physiologic MRI Is Associated with Patient Outcomes in IDH-Wildtype Glioblastoma. Clin Cancer Res. 2021 Jan 1;27(1):237-245. doi: 10.1158/1078-0432.CCR-20-2156. Epub 2020 Oct 7. PMID: 33028594.
+
