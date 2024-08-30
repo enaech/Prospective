@@ -18,7 +18,7 @@ By utilizing these two distinct feature maps, three clusters were established:
 - `cluster 2` represented **“hypovascular cellular tumor”** with low CBV values and low ADC values
 - `cluster 3` represented **“nonviable tissue”** with low CBV values and high ADC values.  
 
-The ranges for the boundaries of the pre-trained and retrospectively validated spatial physiologic habitats were previously reported as 4.37–4.44 for nCBV and 150–187 (×10-6 mm2/s) for ADC in a study on 97 patients<sup>[1](https://10.1158/1078-0432.CCR-20-2156)</sup>.   
+The ranges for the boundaries of the pre-trained and retrospectively validated spatial physiologic habitats were previously reported as 4.37–4.44 for nCBV and 150–187 (×10-6 mm2/s) for ADC in a study on 97 patients<sup>[1](https://doi.org/10.1158/1078-0432.CCR-20-2156)</sup>.   
 
 
 ## Dataset
