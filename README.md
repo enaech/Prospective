@@ -10,6 +10,11 @@ Spatial heterogeneity in glioblastoma indicates a poor prognosis and contributes
 3. An increase in hypovascular cellular habitat predicted tumor progression sites.  
 
 ## MRI aqcusition  
+The brain tumor imaging protocol was acquired on a **3-T scanner (Ingenia 3.0 CX, Philips Healthcare)** and included both conventional and advanced sequences: T2-weighted imaging (**T2WI**), fluid-attenuated inversion recovery (**FLAIR**) imaging, T1-weighted imaging (**T1WI**), diffusion-weighted imaging (**DWI**), dynamic susceptibility contrast (**DSC**) perfusion imaging, and contrast-enhanced **(CE) T1WI**.    
+- The **DWI** parameters were as follows: repetition time (TR)/echo time (TE) 3000/56 ms, diffusion gradient encoding with b values of 0 and 1000 s/mm2, field of view (FOV) of 250 × 250 mm, matrix dimensions of 256 × 256, and slice thickness/gap of 5/2 mm.   
+  **ADC** images were calculated from the DWI images acquired with b values of 1000 and 0 s/mm2.   
+- **DSC** imaging was conducted using a gradient-echo echo-planar imaging protocol. A preload of 0.1 mmol/kg gadoterate meglumine (Dotarem; Guerbet) was administered, followed by a dynamic bolus of a standard dose of 0.1 mmol/kg gadoterate meglumine delivered at a rate of 4 mL/s using an MRI-compatible power injector (Spectris; Medrad). Subsequently, 20 mL of saline was injected at the same rate.
+  The DSC imaging parameters were as follows: TR/TE of 1808/40 ms, flip angle of 35°, FOV of 24 × 24 cm, slice thickness/gap of 5/2 mm, matrix dimensions of 128 × 128, and a total acquisition time of 1 minute and 54 s. The dynamic acquisition was performed with a temporal resolution of 1.5 s, capturing a total of 60 dynamics. The DSC imaging covered the entire tumor volume with the same section orientation as the conventional MRI.  
 
 ## MRI Habitat  
 The final voxel classifications based on nCBV and ADC values were implemented using a k-means clustering module in the scikit-learn python package.
